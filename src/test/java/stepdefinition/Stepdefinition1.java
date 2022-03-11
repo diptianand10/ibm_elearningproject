@@ -17,8 +17,13 @@ public class Stepdefinition1 {
 	
 	@Given("User is on the elearning platform")
 	public void user_is_on_the_elearning_platform() {
-		driver.get("http://elearningm1.upskills.in/");
-		driver.manage().window().maximize();
+		try{
+			driver.get("http://elearningm1.upskills.in/");
+			driver.manage().window().maximize();
+		}catch(Exception e){
+			System.out.println(e);
+		}
+		
 	}
 
 	@When("user enters {string} and {string}")
@@ -305,7 +310,7 @@ public class Stepdefinition1 {
 			
 			ob1 = driver.findElement(By.name("title"));
 			ob1.sendKeys("Hello");
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			
 			driver.switchTo().frame(0);
 			WebElement ob2 = driver.findElement(By.xpath("/html/body/p"));

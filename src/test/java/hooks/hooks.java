@@ -12,8 +12,13 @@ public class hooks {
 	@Before
 	
 	public void init(){
-		System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");	
-		driver = new ChromeDriver();
+		try{
+			System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");	
+			driver = new ChromeDriver();
+		}catch(Exception e){
+			System.out.println(e);
+		}
+		
 	}
 	@After
 	public void end(){

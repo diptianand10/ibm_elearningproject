@@ -11,8 +11,9 @@ import cucumber.api.CucumberOptions;
         glue= {"stepdefinition", "hooks"},
         monochrome = true,
         tags={"@wall, @inbox"},
-//        dryRun = true,
-        plugin = { "pretty","html:reports/cucumber-pretty"}
+        plugin = { "pretty","html:reports/cucumber-pretty",
+        		"json:reports/cucumber-pretty/Cucumber.json",
+        		"junit:reports/cucumber-pretty/Cucumber.xml"}
         )
 
 public class testrunner {

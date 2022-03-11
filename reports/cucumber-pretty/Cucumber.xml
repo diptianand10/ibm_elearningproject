@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="148.153959">
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Post the user message on social wall" time="23.11297">
+<system-out><![CDATA[Given User is on the elearning platform.....................................passed
+When user enters "levi1500" and "12345".....................................passed
+And user clicks on login button.............................................passed
+Then user verification message is displayed.................................passed
+Given user clicks on social network tab.....................................passed
+And clicks on my shared profile.............................................passed
+And types the message in input field........................................passed
+Then clicks the post button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Inbox messages" time="50.049767">
+<system-out><![CDATA[Given User is on the elearning platform.....................................passed
+When user enters "levi1500" and "12345".....................................passed
+And user clicks on login button.............................................passed
+Then user verification message is displayed.................................passed
+Given user clicks on inbox link under the profile tab.......................passed
+And user search for a message "Hii" in search field and clicks on the search button.passed
+Then the message is displayed successfully..................................passed
+And user clicks on reply image..............................................passed
+And enters the message "Hello" field and clicks on send message button......passed
+Then success message is displayed...........................................passed
+When user clicks the back arrow image.......................................passed
+And clicks on select all button and on the caret symbol.....................passed
+And clicks on mark as unread................................................passed
+And clicks on ok button of the pop up message...............................passed
+Then the success message is displayed.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Compose message" time="39.30185">
+<system-out><![CDATA[Given User is on the elearning platform.....................................passed
+When user enters "levi1500" and "12345".....................................passed
+And user clicks on login button.............................................passed
+Then user verification message is displayed.................................passed
+Given user clicks on inbox link under the profile tab.......................passed
+When user clicks on compose message image...................................passed
+And user enters "Dip" in please select an option field......................passed
+And selects a name and enters the subject "Hello" and message "Ohayo" field.passed
+And attaches a file and a description "shinchan"............................passed
+And clicks on send message..................................................passed
+Then message sent is displayed..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Outbox messages" time="35.689372">
+<system-out><![CDATA[Given User is on the elearning platform.....................................passed
+When user enters "levi1500" and "12345".....................................passed
+And user clicks on login button.............................................passed
+Then user verification message is displayed.................................passed
+Given user clicks on inbox link under the profile tab.......................passed
+When user clicks on outbox image............................................passed
+And user search for message in search field and clicks on search button.....passed
+Then searched message is displayed..........................................passed
+When user clicks on select all option.......................................passed
+And clicks on the caret symbol and delete selected message..................passed
+And clicks on ok button of the pop up message...............................passed
+Then the message is deleted.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
