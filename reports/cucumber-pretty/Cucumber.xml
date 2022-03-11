@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="148.153959">
-<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Post the user message on social wall" time="23.11297">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="155.535355">
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Post the user message on social wall" time="25.655078">
 <system-out><![CDATA[Given User is on the elearning platform.....................................passed
 When user enters "levi1500" and "12345".....................................passed
 And user clicks on login button.............................................passed
@@ -11,7 +11,7 @@ And types the message in input field........................................pass
 Then clicks the post button.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Inbox messages" time="50.049767">
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Inbox messages" time="53.896667">
 <system-out><![CDATA[Given User is on the elearning platform.....................................passed
 When user enters "levi1500" and "12345".....................................passed
 And user clicks on login button.............................................passed
@@ -29,7 +29,7 @@ And clicks on ok button of the pop up message...............................pass
 Then the success message is displayed.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Compose message" time="39.30185">
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Compose message" time="37.11442">
 <system-out><![CDATA[Given User is on the elearning platform.....................................passed
 When user enters "levi1500" and "12345".....................................passed
 And user clicks on login button.............................................passed
@@ -43,7 +43,7 @@ And clicks on send message..................................................pass
 Then message sent is displayed..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Outbox messages" time="35.689372">
+<testcase classname="Post the user message on social wall and compose and show the outbox messages" name="Outbox messages" time="38.86919">
 <system-out><![CDATA[Given User is on the elearning platform.....................................passed
 When user enters "levi1500" and "12345".....................................passed
 And user clicks on login button.............................................passed

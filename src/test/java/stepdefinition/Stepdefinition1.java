@@ -1,6 +1,7 @@
 package stepdefinition;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.InvalidArgumentException;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
@@ -331,11 +332,13 @@ public class Stepdefinition1 {
 			WebElement ob2 = driver.findElement(By.name("attach_1"));
 			ob2.sendKeys("C:\\Users\\USER\\Downloads\\shinchan.jpg");
 			
-			Thread.sleep(1500);
+			Thread.sleep(2000);
 			
 			ob2 = driver.findElement(By.xpath("//*[@id='file-descrtiption']"));
 			ob2.sendKeys("shinchan");
-			Thread.sleep(1000);
+			Thread.sleep(1500);
+		}catch(InvalidArgumentException e){
+			System.out.println("File not found");
 		}catch(NoSuchElementException e){
 			System.out.println("Unable to locate the element");
 		}
